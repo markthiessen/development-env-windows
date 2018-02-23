@@ -4,6 +4,11 @@ Disable-UAC
 #Frameworks
 choco install dotnet3.5
 
+#--- Apps ---
+
+# chrome install is currently failing due to checksums... hope this works someday
+# choco upgrade googlechrome
+
 #--- Tools ---
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
 choco install poshgit
