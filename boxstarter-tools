@@ -1,0 +1,53 @@
+# Description: Boxstarter Script, forked from https://gist.github.com/jessfraz/7c319b046daa101a4aaef937a20ff41f
+#
+# Install boxstarter:
+# 	. { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
+#
+# You might need to set: Set-ExecutionPolicy RemoteSigned
+#
+# Run this boxstarter by calling the following from an **elevated** command-prompt:
+# 	start http://boxstarter.org/package/nr/url?<URL-TO-RAW-GIST>
+# OR
+# 	Install-BoxstarterPackage -PackageName <URL-TO-RAW-GIST> -DisableReboots
+#
+# Learn more: http://boxstarter.org/Learn/WebLauncher
+
+#---- TEMPORARY ---
+Disable-UAC
+
+#--- Apps ---
+choco install googlechrome
+
+#--- Tools ---
+choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
+choco install poshgit
+choco install sysinternals -y
+
+#--- SQL
+choco install sql-server-management-studio
+
+#--- node
+choco install nodejs-lts
+choco install yarn
+
+# .NET
+choco install dotnetcore-sdk
+
+#--- VS Code
+choco install visualstudiocode
+choco install vscode-csharp
+choco install vscode-tslint
+choco install vscode-powershell
+choco install vscode-editorconfig
+
+#--- Visual Studio ---
+choco install visualstudio2017enterprise
+choco install visualstudio2017-workload-azure
+choco install visualstudio2017-workload-netcoretools
+choco install visualstudio2017-workload-netweb
+choco install visualstudio2017-workload-node
+
+choco install ncrunch-vs2017
+
+#--- Restore Temporary Settings ---
+Enable-UAC
