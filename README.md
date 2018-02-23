@@ -1,4 +1,4 @@
-In an elevated PowerShell far far away...
+In an elevated PowerShell far far away... or close, whatever.
 
 
 
@@ -21,4 +21,3 @@ Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/markthi
 ```
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/markthiessen/development-env-windows/master/boxstarter-tools -DisableReboots
 ```
-

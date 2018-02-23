@@ -31,7 +31,7 @@ Set-TaskbarOptions -Size Small -Dock Bottom -Combine Full -AlwaysShowIconsOn
 #choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
 
 #--- Apps ---
-choco install googlechrome
+choco install googlechrome --ignorechecksum
 choco install reddit-wallpaper-changer
 
 #--- Uninstall unecessary applications that come with Windows out of the box ---
