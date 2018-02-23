@@ -6,17 +6,20 @@
 # You might need to set: Set-ExecutionPolicy RemoteSigned
 #
 # Run this boxstarter by calling the following from an **elevated** command-prompt:
-# 	start http://boxstarter.org/package/nr/url?<URL-TO-RAW-GIST>
+# 	start http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/markthiessen/development-env-windows/master/boxstarter-tools
 # OR
-# 	Install-BoxstarterPackage -PackageName <URL-TO-RAW-GIST> -DisableReboots
+# 	Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/markthiessen/development-env-windows/master/boxstarter-tools -DisableReboots
 #
 # Learn more: http://boxstarter.org/Learn/WebLauncher
 
 #---- TEMPORARY ---
 Disable-UAC
 
+#Frameworks
+choco install dotnet3.5
+
 #--- Apps ---
-choco install googlechrome
+choco upgrade googlechrome --ignorechecksum
 
 #--- Tools ---
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
