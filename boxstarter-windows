@@ -1,16 +1,4 @@
 # Description: Boxstarter Script, forked from https://gist.github.com/jessfraz/7c319b046daa101a4aaef937a20ff41f
-#
-# Install boxstarter:
-# 	. { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
-#
-# You might need to set: Set-ExecutionPolicy RemoteSigned
-#
-# Run this boxstarter by calling the following from an **elevated** command-prompt:
-# 	start http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/markthiessen/development-env-windows/master/boxstarter-windows
-# OR
-# 	Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/markthiessen/development-env-windows/master/boxstarter-windows -DisableReboots
-#
-# Learn more: http://boxstarter.org/Learn/WebLauncher
 
 #---- TEMPORARY ---
 Disable-UAC
